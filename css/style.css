@@ -1,5 +1,7 @@
 :root{
   --color-primary: #917758;
+  --color-secondary:#3c2915;
+  --color-primary-light:#f5eee6;
 }
 *{
   margin: 0;
@@ -175,4 +177,158 @@ body{
   margin-bottom: 20px;
   font-weight: 100;
   font-size: 16px;
+}
+/*******************
+*     Services     *
+********************/
+
+.services{
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-primary-light);
+}
+.services h2{
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.services .boxes{
+  display: flex;
+  justify-content: space-between;
+  margin-top:50px;
+}
+.services .box{
+  border:3px solid var(--color-secondary);
+  padding: 50px 30px;
+  margin:30px;
+}
+.services .box h4{
+  color: var(--color-secondary);
+  margin-top: 30px;
+}
+.services .box p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/*******************
+*   Appointment    *
+********************/
+
+.appointment{
+  padding: 100px 0;
+  background-color: var(--color-primary);
+  height: 100vh;
+  background-image: url(../images/chair-ic.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 300px;
+}
+.appointment h2{
+  text-align: center;
+  color: var(--color-primary-light);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.appointment img {
+  margin: 0 auto;
+  display: block;
+}
+.appointment form{
+  margin-top: 80px;
+}
+.appointment .personalData{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.appointment .input-wraper{
+  width: 100%;
+  margin-right: 50px;
+}
+.appointment .input-wraper:last-of-type{
+  margin-right: 0;
+}
+.appointment label{
+  display: block;
+  color: var(--color-primary-light);
+  margin-bottom: 2px;
+  font-size: 14px;
+
+}
+.appointment .personalData input,.appointment .personalData select,.appointment  textarea {
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+}
+.appointment textarea{
+  height: 100px;
+}
+.appointment button{
+  color:white;
+  background: var(--color-secondary);
+  padding: 13px 34px;
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*******************
+*      Gallery     *
+********************/
+
+.gallery{
+  padding: 100px 0;
+  background-color: var(--color-primary-light);
+}
+.gallery h2{
+  text-align: center;
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.gallery img {
+  margin: 0 auto;
+  display: block;
+}
+.gallery .gallery-wrapper{
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-wrap: wrap;
+  width: 890px;
+}
+.gallery .gallery-wrapper div{
+  border: 10px solid var(--color-primary);
+  margin: 6px;
+  width: 33%;
+}
+.gallery .gallery-wrapper div img{ 
+  width: 100%;
+}
+
+/*******************
+*      Location    *
+********************/
+
+.location{
+  height: 100vh;
+  padding: 100px 0;
+  background-image: url(../images/bg-location.jpg);
+  background-size: cover;
+}
+
+.location .head {
+  background-color: #191919;
+  padding: 20px;
+  width: 100%;
 }
